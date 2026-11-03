@@ -1,0 +1,38 @@
+{
+  "2026-10-23": [
+    {
+      "id": "0d7b467854b745f7b4b27db6a7cb8d3e",
+      "title": "Apprendre",
+      "done": true,
+      "day": "2026-10-23"
+    }
+  ],
+  "2026-10-24": [
+    {
+      "id": "9fd31535358f42b6a290c2b03b1d1d1f",
+      "title": "Lire 20 pages",
+      "done": true,
+      "day": "2026-10-24"
+    },
+    {
+      "id": "48e972f01b7843ab80fef9622e94bd4e",
+      "title": "Faire du sport",
+      "done": true,
+      "day": "2026-10-24"
+    },
+    {
+      "id": "389e73d7a2ad44d59e40b63426693ec4",
+      "title": "Apprendre",
+      "done": false,
+      "day": "2026-10-24"
+    }
+  ],
+  "2026-10-25": [
+    {
+      "id": "98fdb256cf54400891e2c4efcb7e7aee",
+      "title": "Apprendre",
+      "done": false,
+      "day": "2026-10-25"
+    }
+  ]
+}

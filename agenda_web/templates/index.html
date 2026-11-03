@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Intelligent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Productivité & motivation</p>
+          <h1>Agenda intelligent</h1>
+        </div>
+        <button id="close-day-btn" class="primary-btn">Clôturer la journée</button>
+      </header>
+
+      <section class="panel hero-panel">
+        <div class="hero-copy">
+          <span class="badge">IA anti-procrastination</span>
+          <h2>Programme ta journée et laisse l’agent repasser les tâches non réalisées.</h2>
+        </div>
+        <div class="stats" id="stats"></div>
+      </section>
+
+      <section class="panel form-panel">
+        <div class="field-group">
+          <label for="day-input">Date</label>
+          <input id="day-input" type="date" />
+        </div>
+
+        <div class="field-group task-field">
+          <label for="task-input">Nouvelle tâche</label>
+          <div class="task-row">
+            <input id="task-input" type="text" placeholder="Ex: Lire 20 pages, courir 30 minutes..." />
+            <button id="add-task-btn" class="primary-btn">Ajouter</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel list-panel">
+        <div class="list-header">
+          <h3 id="day-label">Programme du jour</h3>
+          <span id="status-indicator" class="status-pill">Chargement...</span>
+        </div>
+        <ul id="task-list" class="task-list"></ul>
+      </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
